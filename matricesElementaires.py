@@ -16,7 +16,6 @@ def surfaceTriangle(a,b):
 def MatRaideurElementaire(a,b):
     aire = surfaceTriangle(a,b)
     Kel = np.zeros((3,3))
-    m = len(Kel)
     Kel = np.dot(a, b)
     Kel = Kel/(4*aire)
     return Kel
